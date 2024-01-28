@@ -1,0 +1,14 @@
+<section class="pokemon-details-page">
+  <div class="back-arrow">
+    <a href="/pokemons">
+      <img src="../../assets/images/BackArrow.png" alt="back arrow" />
+    </a>
+  </div>
+  <div class="pokemon-card-ctn">
+    <h1>{{ pokemon.name }}</h1>
+    <div class="pokemon-image">
+      <img [src]="pokemon.sprites.front_default" alt="pokemon picture" />
+    </div>
+    <p><b>Type:</b> {{ pokemon.types[0].type.name }}</p>
+  </div>
+</section>

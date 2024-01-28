@@ -1,0 +1,88 @@
+.pokemon-list-ctn {
+  min-height: 90vh;
+  background: rgb(35, 204, 207);
+  background: linear-gradient(
+    351deg,
+    rgba(35, 204, 207, 0.9770773638968482) 27%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-bottom: 3px solid #000000;
+}
+
+.pokemon-grid {
+  max-width: 1170px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  align-content: center;
+  margin: auto;
+  block-size: fit-content;
+}
+
+.pokemon-grid .box {
+  width: 260px;
+  height: 260px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 95, 109, 0.5) 0%,
+      rgba(255, 195, 113, 0.9) 100%
+    ),
+    url("../../assets/images/Poké_Ball_icon.svg.png");
+  background-size: cover;
+  backdrop-filter: blur(5%);
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.pokemon-grid .box:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-grid .box img {
+  width: 200px;
+}
+
+.pokemon-grid .box .pokemon-name {
+  text-transform: capitalize;
+  color: #3c3c3c;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+pagination-controls {
+  text-align: center;
+}
+
+.pokemon-pagination ::ng-deep .ngx-pagination .current {
+  background: linear-gradient(
+    351deg,
+    rgba(35, 204, 207, 0.9770773638968482) 27%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-radius: 50%;
+}
+
+.pokemon-pagination /deep/ .ngx-pagination {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 95, 109, 0.7) 0%,
+      rgba(255, 195, 113, 0.7) 100%
+    ),
+    url("../../assets/images/emmanuelle-magnenat.jpg");
+  background-size: cover;
+  height: 50px;
+}
