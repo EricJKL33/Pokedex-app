@@ -36,7 +36,7 @@
       rgba(255, 95, 109, 0.5) 0%,
       rgba(255, 195, 113, 0.9) 100%
     ),
-    url("../../assets/images/Poké_Ball_icon.svg.png");
+    url("../../assets/images/Poké_Ball_icon.png");
   background-size: cover;
   backdrop-filter: blur(5%);
   cursor: pointer;
@@ -72,7 +72,7 @@ pagination-controls {
   border-radius: 50%;
 }
 
-.pokemon-pagination /deep/ .ngx-pagination {
+.pokemon-pagination ::ng-deep .ngx-pagination {
   font-size: 25px;
   display: flex;
   justify-content: center;
